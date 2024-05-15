@@ -4,7 +4,7 @@ The System class is used average on daily basis to print the output using "Syste
 
 ### Copying Array
 
-The method arrayCopy is used to copy array elements from one array to another array. The parameter used for this method are : 
+The method "<b>System.arrayCopy(source_array, index, dest_array, index, length)</b>" is used to copy array elements from one array to another array. The parameter used for this method are : 
 1. Source of the array of which being copied
 2. Starting position for the copy
 3. Destination array
@@ -14,41 +14,41 @@ The method arrayCopy is used to copy array elements from one array to another ar
 
 ### System Property
 
-Property methods are general operating System properties which are pre-defined. Some general property of os are : "user.dir" -> It gives the current working directory 
-"java.class.path" -> It gives the java class installation path. 
+Property methods are general operating System properties which are pre-defined. Some general property of os are : "user.dir" <b>-></b> It gives the current working directory 
+"java.class.path" <b>-></b> It gives the java class installation path. 
 
-Now this properties can be accessed by "System.getProperties()".
-If you want a specific property you can use "System.getProperty(String string)".
-To change the property "System.setProperty(String string, String string2)"
-To reset the porperty "System.clearProperty()"
+Now this properties can be accessed by "<b>System.getProperties()</b>".
+If you want a specific property you can use "<b>System.getProperty(String string)</b>".
+To change the property "<b>System.setProperty(String string, String string2)</b>"
+To reset the porperty "<b>System.clearProperty()</b>"
 
 
 ### System Environment Variables
 
-Environment variables of the system can be seen using "System.getenv()". It returns all the enivronment varibales.
+Environment variables of the system can be seen using "<b>System.getenv()</b>". It returns all the enivronment varibales in map format.
 
-"System.getenv(String string)" provides environment variable of specified string.
+"<b>System.getenv(String string)</b>" provides environment variable of specified string.
 
 
 ### Exit Program
 
-If you want to exit the program at any point of the time you can use "System.exit(int num)". Here the default parameters is int, if num = 0 then the termination was occured safely. Non-xero indicates abrupt termination.
+If you want to exit the program at any point of the time you can use "<b>System.exit(int num)</b>". Here the default parameters is int, if num = 0 then the termination was occured safely. Non-xero indicates abrupt termination.
 
 
 ### Time 
 
-"System.currentTimeMillis()" will return time in milli seconds.
+"<b>System.currentTimeMillis()</b>" will return time in milli seconds.
 
-"System.nanoTime()" will return accurate time provided by JVM.
+"<b>System.nanoTime()</b>" will return accurate time provided by JVM.
 
 
 ### Console
 
-System class returns a interactive console on method "System.console()". It uses to get interactive console to work with. The provided console would work as normal terminal. The console returned itself is a object, hence it has to be stored in the console class. The few important console classes are : 
+System class returns a interactive console on method "<b>System.console()</b>". It uses to get interactive console to work with. The provided console would work as normal terminal. The console returned itself is a object, hence it has to be stored in the console class. The few important console classes are : 
 
-- readPassword(String string), readLine()
+- readPassword(String string), readLine(String string), readPassword(), readLine()
 
-It reads the from the console and both the methods does the same work but "readPassword()" hides the input data and it can be stored only in char array "char[]". While readLine() reads the data in usual manner.
+It reads the from the console and both the methods does the same work but "<b>readPassword()</b>" hides the input data and it can be stored only in char array "char[]". While "<b>readLine()</b>" reads the data in usual manner.
 
 - printf(Format format, String string), format(Format format, String string)
 
